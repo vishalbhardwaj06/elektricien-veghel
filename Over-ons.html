@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- <script src="script.js"></script> -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header End -->
+<header>
+  <!-- Top Bar -->
+  <div class="bg-blueColor text-white text-sm ">
+    <div class="mx-auto px-4 py-3 flex justify-end items-center txContainer mx-auto px-4 md:px-0 px-5 lg:px-0">
+      <span>Elektricien Veghel 24 uur ⚡</span>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <div class="bg-white shadow-sm ">
+    <div class="mx-auto px-4 txContainer mx-auto px-4 md:px-0 px-5 lg:px-0">
+      <div class="flex items-center justify-between h-24">
+
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img
+            src="images/Uw-elektricien-aan-huis-logo.jpg"
+            alt="Logo"
+            class="h-16 w-auto"
+          />
+        </div>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="#" class="text-textColor txText font-medium hover:text-blueColor">
+            Home
+          </a>
+          <a href="#" class="text-textColor txText font-medium hover:text-blueColor">
+            Over ons
+          </a>
+
+          <!-- Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center gap-1 text-textColor txText font-medium hover:text-blueColor">
+              Diensten
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+                Service 1
+              </a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+                Service 2
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="text-textColor txText font-medium hover:text-blueColor">
+            Faq's
+          </a>
+          <a href="#" class="text-textColor txText font-medium hover:text-blueColor">
+            Recensies
+          </a>
+          <a href="#" class="text-textColor txText font-medium hover:text-blueColor">
+            Contact
+          </a>
+        </nav>
+
+        <!-- Phone Button -->
+        <div class="hidden lg:block">
+          <a
+            href="tel:0852129861"
+            class="bg-greenColor hover:bg-blueColor text-white px-10 py-3 rounded text-sm font-regular flex items-center gap-2"
+          >
+            <i class="fa-solid fa-phone"></i> 085 212 9861
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuBtn"
+          class="lg:hidden text-textColor txText"
+        >
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden lg:hidden pb-4">
+        <nav class="flex flex-col">
+
+            <a href="#" class="py-3 border-b">Home</a>
+            <a href="#" class="py-3 border-b">Over ons</a>
+
+            <!-- Mobile Dropdown -->
+            <div class="border-b">
+            <button
+                id="dienstenBtn"
+                class="w-full flex justify-between items-center py-3"
+            >
+                <span>Diensten</span>
+                <svg
+                id="dienstenIcon"
+                class="w-4 h-4 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                />
+                </svg>
+            </button>
+
+            <!-- Dropdown Items -->
+            <div id="dienstenMenu" class="hidden pl-4 pb-3">
+                <a href="#" class="block py-2">Elektricien</a>
+                <a href="#" class="block py-2">Groepenkast</a>
+                <a href="#" class="block py-2">Storingsdienst</a>
+                <a href="#" class="block py-2">Laadpaal Installatie</a>
+            </div>
+            </div>
+
+            <a href="#" class="py-3 border-b">Faq's</a>
+            <a href="#" class="py-3 border-b">Recensies</a>
+            <a href="#" class="py-3 border-b">Contact</a>
+
+            <a
+            href="tel:0852129861"
+            class="mt-4 bg-greenColor hover:bg-blueColor text-white px-6 py-3 rounded text-center "
+            >
+            <i class="fa-solid fa-phone"></i> 085 212 9861
+            </a>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Header End -->
+
+<section class="bg-blueColor py-10 lg:py-20">
+    <div class="txContainer mx-auto px-4 md:px-0 ">
+        <h1 class="text-white txHeading text-5xl md:text-7xl font-bold mb-6">
+            Over ons
+        </h1>
+
+        <p class="text-white text-xl txText md:text-2xl font-semibold">
+            Over Uw elektricien aan huis
+        </p>
+    </div>
+</section>
+
+
+
+<section class="py-10 lg:py-20 bg-white overflow-hidden">
+    <div class="txContainer mx-auto px-4 md:px-0 ">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Left Content -->
+            <div class="relative">
+
+                <!-- Dots Pattern -->
+                <div class="absolute -top-12 -left-10 opacity-30">
+                    <div class="grid grid-cols-8 gap-3">
+                        <!-- Repeat dots -->
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        <span class="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl md:text-3xl font-bold text-darkColor txHeading mb-8">
+                    Over UW Elektricien Aan Huis
+                </h2>
+
+                <div class="space-y-8 text-textColor txText text-[16px] leading-8">
+                    <p>
+                        <strong>Elektricien Veghel 24 uur</strong> is uw betrouwbare partner
+                        voor alle soorten elektra werkzaamheden. Wij staan klaar voor zowel
+                        particuliere als zakelijke klanten en bieden dag en nacht
+                        professionele service.
+                    </p>
+
+                    <p>
+                        Bij <strong>Elektricien Veghel 24 uur</strong> begrijpen wij als
+                        geen ander hoe belangrijk goedwerkende elektra is. Daarom staan
+                        goede service, transparantie en eerlijke tarieven centraal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Images -->
+            <div class="relative flex justify-center lg:justify-end">
+
+                <!-- Main Image -->
+                <img
+                    src="images/layout01-img03.jpg"
+                    alt=""
+                    class="rounded-lg w-full max-w-[550px] h-[470px] object-cover"
+                >
+
+                <!-- Floating Image -->
+                <div class="absolute -bottom-16 -right-6 md:right-0">
+                    <img
+                        src="images/layout01-img03-02.jpg"
+                        alt=""
+                        class="w-[300px] md:w-[420px] rounded-lg shadow border-8 border-white"
+                    >
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="py-10 lg:py-20 overflow-hidden">
+    <div class="txContainer mx-auto px-4 md:px-0  lg:px-8">
+
+        <div class="grid lg:grid-cols-2">
+
+            <div class="relative h-[400px] lg:h-auto" style="background-image: url(images/about-us-image-04.png); background-size: cover;">
+               
+            </div>
+
+            <div class=" w-[100%] bg-white shadow-xl p-8 md:p-12 ">
+
+                <h2 class="text-3xl md:text-3xl font-bold text-darkColor txHeading mb-8">
+                    Het team Elektricien Veghel
+                </h2>
+
+                <p class="text-textColor txText text-[16px] leading-8">
+                    Bij <strong>Elektricien Veghel 24 uur</strong> werken wij met een team van
+                    <strong>12 ervaren en gemotiveerde elektriciens.</strong>
+                    Elk van onze specialisten heeft zijn eigen expertise –
+                    van het <strong>verhelpen van storingen</strong> tot het
+                    <strong>aanleggen van elektra in nieuwbouwwoningen.</strong>
+                </p>
+
+                <p class="text-textColor txText text-[16px] leading-8 mt-6">
+                    Ondanks deze verschillende specialisaties delen we één
+                    gezamenlijk doel:
+                    <strong>klanttevredenheid en uitstekende service.</strong>
+                    Dankzij ons hechte team is er
+                    <strong>altijd een elektricien beschikbaar</strong>
+                    om u snel en professioneel te helpen,
+                    waar en wanneer u ons nodig heeft.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer Start -->
+<div class="footer">
+<section class="bg-gray-100 py-6 mt-10">
+    <div class="container mx-auto px-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 text-center">
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading">
+                    24/7 actief
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading">
+                    45+ jaar ervaring
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading">
+                    Direct geholpen
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading">
+                    Geen wachttijden
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<footer class="bg-blueColor text-white pt-20 pb-10">
+    <div class="txContainer mx-auto px-4 md:px-0 ">
+
+        <!-- Footer Top -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- Column 1 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading">
+                    Diensten
+                </h3>
+
+                <ul class="space-y-4 text-lg">
+                    <li><a href="#" class="hover:underline txText">Aardlekschakelaar vervangen</a></li>
+                    <li><a href="#" class="hover:underline txText">Aardpen slaan</a></li>
+                    <li><a href="#" class="hover:underline txText">Elektra renoveren</a></li>
+                    <li><a href="#" class="hover:underline txText">Krachtstroom aanleggen</a></li>
+                    <li><a href="#" class="hover:underline txText">Inductiekookplaat aansluiten</a></li>
+                    <li><a href="#" class="hover:underline txText">Perilex aansluiting</a></li>
+                    <li><a href="#" class="hover:underline txText">Tuinverlichting aanleggen</a></li>
+                    <li><a href="#" class="hover:underline txText">Kortsluiting</a></li>
+                    <li><a href="#" class="hover:underline txText">Storingsdienst</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading">
+                    Elektricien Veghel
+                </h3>
+
+                <ul class="space-y-4 text-lg">
+                    <li><a href="#" class="hover:underline txText">Reviews</a></li>
+                    <li><a href="#" class="hover:underline txText">Meest gestelde vragen (FAQ)</a></li>
+                    <li><a href="#" class="hover:underline txText">Over ons</a></li>
+                    <li><a href="#" class="hover:underline txText">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline txText">Disclaimer</a></li>
+                    <li><a href="#" class="hover:underline txText">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+                <p class="text-lg leading-9 font-medium txText">
+                    Wij werken snel, betrouwbaar en transparant,
+                    zodat u precies weet waar u aan toe bent.
+                    Als lokale elektricien in Veghel zijn we trots
+                    op onze persoonlijke aanpak en directe service.
+                </p>
+            </div>
+
+            <!-- Column 4 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading">
+                    Contact
+                </h3>
+
+                <h4 class="font-bold text-xl mb-5 txHeading">
+                    Elektricien Veghel
+                </h4>
+
+                <ul class="space-y-3 text-lg">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <a href="tel:0852129861" class="txText">085 212 9861</a>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-globe"></i>
+                        <a href="#" class="txText">elektricien-veghel.nl</a>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@elektricien-veghel.nl" class="txText">
+                            info@elektricien-veghel.nl
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="mt-10">
+                    <h4 class="font-bold text-xl txHeading">
+                        Openingstijden:
+                    </h4>
+
+                    <p class="text-xl font-semibold mt-2 txText">
+                        24 uur actief in uw regio.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/50 my-16"></div>
+
+        <!-- Copyright -->
+        <div class="text-center">
+            <p class="text-lg font-medium leading-relaxed txText">
+                Copyright © 2012 – 2025 Elektricien Veghel 24 |
+                Regio's |
+                Alle rechten voorbehouden |
+                FAQ |
+                Privacy policy |
+                Sitemap
+            </p>
+        </div>
+
+    </div>
+</footer>
+</div>
+<!-- Footer End -->
+
+
+
+
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if (menuBtn) {
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+}
+
+const dienstenBtn = document.getElementById("dienstenBtn");
+const dienstenMenu = document.getElementById("dienstenMenu");
+const dienstenIcon = document.getElementById("dienstenIcon");
+
+if (dienstenBtn) {
+  dienstenBtn.addEventListener("click", () => {
+    dienstenMenu.classList.toggle("hidden");
+    dienstenIcon.classList.toggle("rotate-180");
+  });
+}
+
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        blueColor: 'var(--primary-color)',
+        greenColor: 'var(--secondary-color)',
+        darkColor: 'var(--dark-color)',
+        textColor: 'var(--text-color)',
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
