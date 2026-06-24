@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!-- <script src="script.js"></script> -->
+
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<!-- Header Start -->
+<header>
+<!-- Top Bar -->
+<div class="bg-blueColor text-white text-sm ">
+<div class="mx-auto px-4 py-3 flex justify-end items-center txContainer mx-auto px-5 lg:px-0">
+    <span class="txText">Elektricien Veghel 24 uur ⚡</span>
+</div>
+</div>
+
+<!-- Main Header -->
+<div class="bg-white shadow-sm ">
+<div class="mx-auto px-4 txContainer mx-auto px-5 lg:px-0">
+    <div class="flex items-center justify-between h-24">
+
+    <!-- Logo -->
+    <div class="flex items-center">
+        <a href="index.html"rel="noopener noreferrer">
+            <img
+            src="images/Uw-elektricien-aan-huis-logo.jpg"
+            alt="Logo"
+            class="h-16 w-auto"
+            />
+        </a>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex items-center space-x-8">
+        <a href="index.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Home
+        </a>
+        <a href="Over-ons.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Over ons
+        </a>
+
+        <!-- Dropdown -->
+        <div class="relative group">
+        <button class="flex items-center gap-1 text-textColor txText font-medium hover:text-blueColor">
+            Diensten
+            <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+            />
+            </svg>
+        </button>
+
+        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <a href="aardlekschakelaar-vervangen.html" class="block px-4 py-2 hover:bg-gray-100">
+            Aardlekschakelaar vervangen
+            </a>
+            <a href="aardpen-slaan-kosten.html" class="block px-4 py-2 hover:bg-gray-100">
+            Aardpen slaan
+            </a>
+            <a href="elektra-renoveren.html" class="block px-4 py-2 hover:bg-gray-100">
+            Elektra renoveren
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Krachtstroom aanleggen
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Inductiekookplaat aansluiten
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Perilex aansluiting
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Tuinverlichting aanleggen
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Kortsluiting
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Storingsdienst
+            </a>
+        </div>
+        </div>
+
+        <a href="#" class="text-textColor txText font-medium hover:text-blueColor">
+        Faq's
+        </a>
+        <a href="#" class="text-textColor txText font-medium hover:text-blueColor">
+        Recensies
+        </a>
+        <a href="#" class="text-textColor txText font-medium hover:text-blueColor">
+        Contact
+        </a>
+    </nav>
+
+    <!-- Phone Button -->
+    <div class="hidden lg:block">
+        <a
+        href="tel:0852129861"
+        class="bg-greenColor hover:bg-blueColor txHeading text-white px-10 py-3 rounded text-sm font-regular flex items-center gap-2"
+        >
+        <i class="fa-solid fa-phone"></i> 085 212 9861
+        </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+        id="menuBtn"
+        class="lg:hidden text-textColor txText"
+    >
+        <svg
+        class="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+        />
+        </svg>
+    </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden pb-4">
+    <nav class="flex flex-col">
+
+        <a href="index.html" class="py-3 border-b txText">Home</a>
+        <a href="Over-ons.html" class="py-3 border-b txText">Over ons</a>
+
+        <!-- Mobile Dropdown -->
+        <div class="border-b txText">
+        <button
+            id="dienstenBtn"
+            class="w-full flex justify-between items-center py-3"
+        >
+            <span>Diensten</span>
+            <svg
+            id="dienstenIcon"
+            class="w-4 h-4 transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+            />
+            </svg>
+        </button>
+
+        <!-- Dropdown Items -->
+        <div id="dienstenMenu" class="hidden pl-4 pb-3">
+            <a href="aardlekschakelaar-vervangen.html" class="block px-4 py-2 hover:bg-gray-100">
+            Aardlekschakelaar vervangen
+            </a>
+            <a href="aardpen-slaan-kosten.html" class="block px-4 py-2 hover:bg-gray-100">
+            Aardpen slaan
+            </a>
+            <a href="elektra-renoveren.html" class="block px-4 py-2 hover:bg-gray-100">
+            Elektra renoveren
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Krachtstroom aanleggen
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Inductiekookplaat aansluiten
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Perilex aansluiting
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Tuinverlichting aanleggen
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Kortsluiting
+            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">
+            Storingsdienst
+            </a>
+        </div>
+        </div>
+
+        <a href="#" class="py-3 border-b txText">Faq's</a>
+        <a href="#" class="py-3 border-b txText">Recensies</a>
+        <a href="#" class="py-3 border-b txText">Contact</a>
+
+        <a
+        href="tel:0852129861"
+        class="mt-4 bg-greenColor hover:bg-blueColor txHeading text-white px-6 py-3 rounded text-center "
+        >
+        <i class="fa-solid fa-phone"></i> 085 212 9861
+        </a>
+
+    </nav>
+    </div>
+</div>
+</div>
+</header>
+<!-- Header End -->
+
+<section class="bg-blueColor py-10 lg:py-20">
+    <div class="txContainer mx-auto px-4 md:px-0 ">
+        <h1 class="text-white txHeading text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 txHeading">
+            Veelgestelde vragen
+        </h1>
+
+        <p class="text-white text-xl txText md:text-2xl font-semibold">
+            De veelgestelde vragen bij Uw elektricien aan huis
+        </p>
+
+        <div class="mt-10">
+        <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+            <i class="fa-solid fa-phone"></i>
+            085 212 9861
+        </a>
+    </div>
+    </div>
+</section>
+
+
+<section class="py-24">
+    <div class="txContainer mx-auto px-4 md:px-0">
+
+        <div class="grid lg:grid-cols-2 gap-12">
+
+            <!-- LEFT COLUMN -->
+            <div class="space-y-16">
+
+                <!-- Algemene vragen -->
+                <div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <h2 class="txHeading text-2xl lg:text-3xl font-medium text-darkColor whitespace-nowrap">
+                            Algemene vragen
+                        </h2>
+                        <div class="h-[2px] flex-1 bg-blueColor"></div>
+                    </div>
+
+                    <div class="space-y-0">
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Wat is jullie werkwijze?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                    U kunt <strong>telefonisch contact met ons opnemen</strong> of direct <strong>een offerte aanvragen</strong>. Daarna nemen wij zo snel mogelijk contact met u op om de werkzaamheden te bespreken. U ontvangt <strong>altijd vooraf een duidelijke offerte of kostenindicatie</strong>, zodat u precies weet waar u aan toe bent. Vervolgens plannen wij een afspraak in en komt één van onze ervaren elektriciens bij u langs om de klus uit te voeren.
+                                </p>
+
+                                <p class="txText text-textColor">
+                                    Wanneer het niet mogelijk is om op afstand een juiste inschatting te maken, sturen wij <strong>kosteloos een monteur</strong> langs voor een diagnose. Op basis daarvan ontvangt u een <strong>duidelijke prijsopgave</strong> voordat de werkzaamheden beginnen. Zo komt u <strong>nooit voor verrassingen of onverwachte kosten</strong> te staan – bij <strong>Elektricien Veghel</strong> weet u altijd waar u aan toe bent.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Waarom zou ik kiezen voor Elektricien Veghel?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                    Bij <strong>Elektricien Veghel</strong> staan <strong>klanttevredenheid</strong> en een <strong>transparante werkwijze</strong> altijd centraal. Wij hanteren <strong>duidelijke, eerlijke tarieven</strong> en maken vooraf heldere afspraken, zodat u precies weet wat u kunt verwachten. Onze elektriciens zijn <strong>24 uur per dag bereikbaar voor spoedklussen</strong> en kunnen snel bij u op locatie zijn. Bovendien ontvangt u bij ons <strong>garantie op alle uitgevoerde werkzaamheden</strong>. Dankzij deze betrouwbare aanpak hebben wij al vele <strong>tevreden klanten in Veghel en omgeving</strong> mogen helpen.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Hoe lang bestaan jullie?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                    Bij <strong>Elektricien Veghel</strong> beschikken we over <strong>meer dan 45 jaar ervaring</strong> in het vak. Al decennialang helpen wij zowel particulieren als bedrijven met het aanleggen, onderhouden en repareren van elektrische installaties. Onze jarenlange expertise zorgt ervoor dat wij elk probleem snel en vakkundig kunnen oplossen.
+                                </p>
+
+                                <p class="txText text-textColor">
+                                    Door de combinatie van <strong>traditioneel vakmanschap</strong> en <strong>moderne technieken</strong> bieden wij betrouwbare oplossingen van hoge kwaliteit. Met ruim 45 jaar aan kennis en ervaring is <strong>Elektricien Veghel</strong> uw vertrouwde partner voor alle elektra werkzaamheden in Veghel en omgeving.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Werkzaamheden -->
+                <div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <h2 class="txHeading text-2xl lg:text-3xl font-medium text-darkColor whitespace-nowrap">
+                            Werkzaamheden
+                        </h2>
+                        <div class="h-[2px] flex-1 bg-blueColor"></div>
+                    </div>
+
+                    <div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Hoeveel monteurs hebben jullie?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                    Wij werken met monteurs door heel het land waardoor we snel kunnen schakelen.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Wat moet je doen bij waterelektra</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                    Blijf uit de buurt van het water! Raak het water of natte oppervlakken niet aan. Water geleidt elektriciteit en kan een elektrische schok veroorzaken.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Wat is jullie werkwijze?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                    Bij <strong>Elektricien Veghel</strong> werken we volgens een <strong>duidelijke en transparante werkwijze</strong>. Zodra u contact met ons opneemt, luisteren we naar uw wensen en bespreken we de situatie. U ontvangt <strong>altijd vooraf een heldere offerte</strong> of kostenindicatie, zodat u precies weet waar u aan toe bent. Vervolgens plannen we een afspraak in en komt één van onze <strong>gecertificeerde elektriciens</strong> bij u langs om de werkzaamheden veilig en vakkundig uit te voeren. Na afloop controleren we alles zorgvuldig en laten we de werkplek netjes achter. Dankzij onze <strong>betrouwbare service, open communicatie en snelle aanpak</strong> weet u dat u op ons kunt rekenen.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Doen jullie ook elektra in de keuken?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                   Bij <strong>Elektricien Veghel</strong> voeren wij ook <strong>elektra werkzaamheden in de keuken</strong> uit. Of het nu gaat om het <strong>plaatsen van extra stopcontacten</strong>, het <strong>aanleggen van een Perilex-aansluiting</strong> voor een inductiekookplaat of het <strong>uitbreiden van de groepenkast</strong> voor meer vermogen – wij regelen het allemaal. Onze ervaren elektriciens zorgen voor een <strong>veilige en professionele installatie</strong>, volledig volgens de geldende normen. Zo kunt u uw keuken zonder zorgen gebruiken en genieten van optimaal elektrisch comfort.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="space-y-16">
+                <!-- Betalingen -->
+                <div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <h2 class="txHeading text-2xl lg:text-3xl font-medium text-darkColor whitespace-nowrap">
+                            Betalingen en prijs
+                        </h2>
+                        <div class="h-[2px] flex-1 bg-blueColor"></div>
+                    </div>
+
+                    <div>
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Hoe kan ik een offerte aanvragen?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                    De kosten voor elektra werkzaamheden bij Elektricien Veghel hangen af van het type klus en de omvang van het werk. Kleine reparaties, zoals het vervangen van een stopcontact of schakelaar, zijn uiteraard voordeliger dan grotere projecten, zoals het aanleggen van een nieuwe groepenkast of het vernieuwen van de complete elektra in uw woning.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Wat kost een spoedklus?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                    Bij <strong>Elektricien Veghel</strong> begrijpen we dat een storing of kortsluiting nooit gelegen komt. Daarom bieden wij een <strong>24/7 spoedservice</strong>, zodat u ook buiten kantooruren snel geholpen wordt. De kosten voor een spoedklus zijn afhankelijk van het tijdstip, de aard van de storing en de benodigde werkzaamheden.
+                                </p>
+
+                                <p class="txText text-textColor">
+                                    Voordat we aan de slag gaan, geven we altijd een <strong>duidelijke kostenindicatie</strong>, zodat u precies weet waar u aan toe bent. Geen verrassingen achteraf – alleen snelle, veilige en betrouwbare hulp wanneer u die het hardst nodig heeft.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Kan ik mijn afspraak annuleren?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                   Bij <strong>Elektricien Veghel</strong> kunt u uw afspraak <strong>kosteloos annuleren binnen 24 uur</strong> na het maken van de afspraak. Na deze periode brengen wij mogelijk <strong>annuleringskosten</strong> in rekening, omdat onze planning en monteurs speciaal voor u worden gereserveerd. Neem bij wijzigingen of annuleringen zo snel mogelijk contact met ons op, zodat wij samen een passende oplossing kunnen vinden.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Hoe kan ik betalen?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                   Bij <strong>Elektricien Veghel</strong> kunt u eenvoudig <strong>betalen met pin</strong> bij onze monteur. Na betaling ontvangt u <strong>direct een digitale factuur</strong>, zodat u altijd een duidelijk overzicht heeft van de uitgevoerde werkzaamheden en de kosten. Snel, veilig en overzichtelijk!
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Garantie -->
+                <div>
+                    <div class="flex items-center gap-4 mb-8">
+                        <h2 class="txHeading text-2xl lg:text-3xl font-medium text-darkColor whitespace-nowrap">
+                            Voorwaarden & garantie
+                        </h2>
+                        <div class="h-[2px] flex-1 bg-blueColor"></div>
+                    </div>
+
+                    <div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Heb ik garantie op de werkzaamheden?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                    Natuurlijk! Bij <strong>Elektricien Veghel</strong> vinden wij het belangrijk dat u <strong>100% tevreden</strong> bent met ons werk. Daarom krijgt u <strong>altijd garantie op alle uitgevoerde werkzaamheden</strong>. Is er onverhoopt iets niet helemaal goed gegaan bij het aanleggen of renoveren van de elektra? Neem dan gerust contact met ons op – wij zorgen ervoor dat het snel en netjes wordt opgelost.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item border-b border-gray-300">
+                            <button class="faq-btn w-full flex justify-between items-center py-6">
+                                <span class="txHeading text-lg text-left text-darkColor font-semibold">Kan ik een monteur met spoed krijgen?</span>
+                                <span class="faq-icon text-xl font-medium">+</span>
+                            </button>
+                            <div class="faq-content hidden pb-6">
+                                <p class="txText text-textColor">
+                                    Bij <strong>Elektricien Veghel</strong> kunt u ook <strong>met spoed een monteur</strong> inschakelen. Heeft u te maken met een stroomstoring, kortsluiting of een ander urgent elektra probleem? Geen zorgen – onze <strong>spoedservice is 24/7 bereikbaar</strong>. Wij sturen direct een <strong>ervaren elektricien</strong> naar u toe, zodat het probleem snel, veilig en vakkundig wordt opgelost.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Footer Start -->
+<div class="footer">
+<section class="bg-gray-100 py-6">
+    <div class="txContainer mx-auto px-4 md:px-0">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 text-center">
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading">
+                    24/7 actief
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading">
+                    45+ jaar ervaring
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading">
+                    Direct geholpen
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading">
+                    Geen wachttijden
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<footer class="bg-blueColor text-white pt-20 pb-10">
+    <div class="txContainer mx-auto px-4 md:px-0">
+
+        <!-- Footer Top -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- Column 1 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading">
+                    Diensten
+                </h3>
+
+                <ul class="space-y-4 text-lg">
+                    <li><a href="#" class="hover:underline txText">Aardlekschakelaar vervangen</a></li>
+                    <li><a href="#" class="hover:underline txText">Aardpen slaan</a></li>
+                    <li><a href="#" class="hover:underline txText">Elektra renoveren</a></li>
+                    <li><a href="#" class="hover:underline txText">Krachtstroom aanleggen</a></li>
+                    <li><a href="#" class="hover:underline txText">Inductiekookplaat aansluiten</a></li>
+                    <li><a href="#" class="hover:underline txText">Perilex aansluiting</a></li>
+                    <li><a href="#" class="hover:underline txText">Tuinverlichting aanleggen</a></li>
+                    <li><a href="#" class="hover:underline txText">Kortsluiting</a></li>
+                    <li><a href="#" class="hover:underline txText">Storingsdienst</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading">
+                    Elektricien Veghel
+                </h3>
+
+                <ul class="space-y-4 text-lg">
+                    <li><a href="#" class="hover:underline txText">Reviews</a></li>
+                    <li><a href="#" class="hover:underline txText">Meest gestelde vragen (FAQ)</a></li>
+                    <li><a href="#" class="hover:underline txText">Over ons</a></li>
+                    <li><a href="#" class="hover:underline txText">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline txText">Disclaimer</a></li>
+                    <li><a href="#" class="hover:underline txText">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+                <p class="text-lg leading-9 font-medium txText">
+                    Wij werken snel, betrouwbaar en transparant,
+                    zodat u precies weet waar u aan toe bent.
+                    Als lokale elektricien in Veghel zijn we trots
+                    op onze persoonlijke aanpak en directe service.
+                </p>
+            </div>
+
+            <!-- Column 4 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading">
+                    Contact
+                </h3>
+
+                <h4 class="font-bold text-xl mb-5 txHeading">
+                    Elektricien Veghel
+                </h4>
+
+                <ul class="space-y-3 text-lg">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <a href="tel:0852129861" class="txText">085 212 9861</a>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-globe"></i>
+                        <a href="#" class="txText">elektricien-veghel.nl</a>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@elektricien-veghel.nl" class="txText">
+                            info@elektricien-veghel.nl
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="mt-10">
+                    <h4 class="font-bold text-xl txHeading">
+                        Openingstijden:
+                    </h4>
+
+                    <p class="text-xl font-semibold mt-2 txText">
+                        24 uur actief in uw regio.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/50 my-16"></div>
+
+        <!-- Copyright -->
+        <div class="text-center">
+            <p class="text-lg font-medium leading-relaxed txText">
+                Copyright © 2012 – 2025 Elektricien Veghel 24 |
+                Regio's |
+                Alle rechten voorbehouden |
+                FAQ |
+                Privacy policy |
+                Sitemap
+            </p>
+        </div>
+
+    </div>
+</footer>
+</div>
+<!-- Footer End -->
+
+
+
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if (menuBtn) {
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+}
+
+const dienstenBtn = document.getElementById("dienstenBtn");
+const dienstenMenu = document.getElementById("dienstenMenu");
+const dienstenIcon = document.getElementById("dienstenIcon");
+
+if (dienstenBtn) {
+  dienstenBtn.addEventListener("click", () => {
+    dienstenMenu.classList.toggle("hidden");
+    dienstenIcon.classList.toggle("rotate-180");
+  });
+}
+
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        blueColor: 'var(--primary-color)',
+        greenColor: 'var(--secondary-color)',
+        darkColor: 'var(--dark-color)',
+        textColor: 'var(--text-color)',
+      }
+    }
+  }
+}
+
+
+document.querySelectorAll('.faq-btn').forEach(button => {
+    button.addEventListener('click', () => {
+
+        const item = button.closest('.faq-item');
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon');
+
+        document.querySelectorAll('.faq-item').forEach(faq => {
+            if (faq !== item) {
+                faq.querySelector('.faq-content').classList.add('hidden');
+                faq.querySelector('.faq-icon').textContent = '+';
+            }
+        });
+
+        content.classList.toggle('hidden');
+        icon.textContent = content.classList.contains('hidden') ? '+' : '−';
+    });
+});
+</script>
+</body>
+</html>
