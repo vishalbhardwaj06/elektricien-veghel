@@ -7,7 +7,7 @@
       <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 
     <link
     rel="stylesheet"
@@ -520,43 +520,5 @@
 </div>
 <!-- Footer End -->
 
-
-
-
-
-<script>
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-
-if (menuBtn) {
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-}
-
-const dienstenBtn = document.getElementById("dienstenBtn");
-const dienstenMenu = document.getElementById("dienstenMenu");
-const dienstenIcon = document.getElementById("dienstenIcon");
-
-if (dienstenBtn) {
-  dienstenBtn.addEventListener("click", () => {
-    dienstenMenu.classList.toggle("hidden");
-    dienstenIcon.classList.toggle("rotate-180");
-  });
-}
-
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        blueColor: 'var(--primary-color)',
-        greenColor: 'var(--secondary-color)',
-        darkColor: 'var(--dark-color)',
-        textColor: 'var(--text-color)',
-      }
-    }
-  }
-}
-</script>
 </body>
 </html>

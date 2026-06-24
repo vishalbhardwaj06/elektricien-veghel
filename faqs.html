@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<!-- <script src="script.js"></script> -->
+<script src="script.js"></script>
 
 <link
 rel="stylesheet"
@@ -243,7 +243,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 </section>
 
 
-<section class="py-24">
+<section class="py-10 lg:py-20">
     <div class="txContainer mx-auto px-4 md:px-0">
 
         <div class="grid lg:grid-cols-2 gap-12">
@@ -490,7 +490,6 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     <div class="txContainer mx-auto px-4 md:px-0">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 text-center">
-
             <!-- Item -->
             <div class="flex items-center justify-center gap-3">
                 <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
@@ -640,62 +639,5 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 </div>
 <!-- Footer End -->
 
-
-
-
-<script>
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-
-if (menuBtn) {
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-}
-
-const dienstenBtn = document.getElementById("dienstenBtn");
-const dienstenMenu = document.getElementById("dienstenMenu");
-const dienstenIcon = document.getElementById("dienstenIcon");
-
-if (dienstenBtn) {
-  dienstenBtn.addEventListener("click", () => {
-    dienstenMenu.classList.toggle("hidden");
-    dienstenIcon.classList.toggle("rotate-180");
-  });
-}
-
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        blueColor: 'var(--primary-color)',
-        greenColor: 'var(--secondary-color)',
-        darkColor: 'var(--dark-color)',
-        textColor: 'var(--text-color)',
-      }
-    }
-  }
-}
-
-
-document.querySelectorAll('.faq-btn').forEach(button => {
-    button.addEventListener('click', () => {
-
-        const item = button.closest('.faq-item');
-        const content = item.querySelector('.faq-content');
-        const icon = item.querySelector('.faq-icon');
-
-        document.querySelectorAll('.faq-item').forEach(faq => {
-            if (faq !== item) {
-                faq.querySelector('.faq-content').classList.add('hidden');
-                faq.querySelector('.faq-icon').textContent = '+';
-            }
-        });
-
-        content.classList.toggle('hidden');
-        icon.textContent = content.classList.contains('hidden') ? '+' : '−';
-    });
-});
-</script>
 </body>
 </html>

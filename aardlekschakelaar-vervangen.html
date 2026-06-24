@@ -11,7 +11,7 @@
       <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 
     <link
     rel="stylesheet"
@@ -496,64 +496,64 @@
 
             <div class="space-y-5">
 
-                <div class="faq-item bg-white rounded-xl overflow-hidden">
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
                     <button
-                        class="faq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
                         <span class="txHeading text-xl font-semibold text-darkColor">
                             Mag ik zelf een aardlekschakelaar aansluiten?
                         </span>
-                        <span class="faq-icon text-3xl font-bold">−</span>
+                        <span class="txfaq-icon text-3xl font-bold">−</span>
                     </button>
 
-                    <div class="faq-content px-8 pb-6">
+                    <div class="txfaq-content px-8 pb-6">
                         <p class="txText text-textColor text-[16px] leading-8">
                             Hoewel het technisch mogelijk is, wordt dit sterk afgeraden. Een verkeerde aansluiting kan leiden tot gevaarlijke situaties. Laat dit daarom altijd uitvoeren door een erkende elektricien, zoals Elektricien Veghel 24 uur, die zorgt voor een veilige en professionele installatie.
                         </p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white rounded-xl overflow-hidden">
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
                     <button
-                        class="faq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
                         <span class="txHeading text-xl font-semibold text-darkColor">
                             Hoe weet ik of mijn aardlekschakelaar nog goed werkt?
                         </span>
-                        <span class="faq-icon text-3xl font-bold">+</span>
+                        <span class="txfaq-icon text-3xl font-bold">+</span>
                     </button>
 
-                    <div class="faq-content hidden px-8 pb-6">
+                    <div class="txfaq-content hidden px-8 pb-6">
                         <p class="txText text-textColor text-[16px] leading-8">
                             Hoewel het technisch mogelijk is, wordt dit sterk afgeraden. Een verkeerde aansluiting kan leiden tot gevaarlijke situaties. Laat dit daarom altijd uitvoeren door een erkende elektricien, zoals Elektricien Veghel 24 uur, die zorgt voor een veilige en professionele installatie.
                         </p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white rounded-xl overflow-hidden">
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
                     <button
-                        class="faq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
                         <span class="txHeading text-xl font-semibold text-darkColor">
                             Hoe vaak moet ik mijn aardlekschakelaar testen?
                         </span>
-                        <span class="faq-icon text-3xl font-bold">+</span>
+                        <span class="txfaq-icon text-3xl font-bold">+</span>
                     </button>
 
-                    <div class="faq-content hidden px-8 pb-6">
+                    <div class="txfaq-content hidden px-8 pb-6">
                         <p class="txText text-textColor text-[16px] leading-8">
                            Het wordt aanbevolen om de aardlekschakelaar minimaal twee keer per jaar te testen. Zo weet u zeker dat deze goed blijft functioneren en uw installatie veilig is.
                         </p>
                     </div>
                 </div>
 
-                <div class="faq-item bg-white rounded-xl overflow-hidden">
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
                     <button
-                        class="faq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
                         <span class="txHeading text-xl font-semibold text-darkColor">
                             Wanneer moet ik mijn aardlekschakelaar vervangen?
                         </span>
-                        <span class="faq-icon text-3xl font-bold">+</span>
+                        <span class="txfaq-icon text-3xl font-bold">+</span>
                     </button>
 
-                    <div class="faq-content hidden px-8 pb-6">
+                    <div class="txfaq-content hidden px-8 pb-6">
                         <p class="txText text-textColor text-[16px] leading-8">
                             Het wordt aanbevolen om de aardlekschakelaar minimaal twee keer per jaar te testen. Zo weet u zeker dat deze goed blijft functioneren en uw installatie veilig is.
                         </p>
@@ -746,61 +746,5 @@
 </div>
 <!-- Footer End -->
 
-
-
-
-<script>
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
-
-if (menuBtn) {
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-  });
-}
-
-const dienstenBtn = document.getElementById("dienstenBtn");
-const dienstenMenu = document.getElementById("dienstenMenu");
-const dienstenIcon = document.getElementById("dienstenIcon");
-
-if (dienstenBtn) {
-  dienstenBtn.addEventListener("click", () => {
-    dienstenMenu.classList.toggle("hidden");
-    dienstenIcon.classList.toggle("rotate-180");
-  });
-}
-
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        blueColor: 'var(--primary-color)',
-        greenColor: 'var(--secondary-color)',
-        darkColor: 'var(--dark-color)',
-        textColor: 'var(--text-color)',
-      }
-    }
-  }
-}
-
-document.querySelectorAll('.faq-btn').forEach(button => {
-    button.addEventListener('click', () => {
-
-        const item = button.closest('.faq-item');
-        const content = item.querySelector('.faq-content');
-        const icon = item.querySelector('.faq-icon');
-
-        document.querySelectorAll('.faq-item').forEach(faq => {
-            if (faq !== item) {
-                faq.querySelector('.faq-content').classList.add('hidden');
-                faq.querySelector('.faq-icon').textContent = '+';
-            }
-        });
-
-        content.classList.toggle('hidden');
-        icon.textContent = content.classList.contains('hidden') ? '+' : '−';
-    });
-});
-</script>
 </body>
 </html>
