@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="script.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+</head>
+<body>
+    
+<!-- Header Start -->
+<header>
+<!-- Top Bar -->
+<div class="bg-blueColor text-white text-sm ">
+<div class="mx-auto px-4 py-3 flex justify-end items-center txContainer mx-auto px-5 lg:px-0">
+    <span class="txText">Elektricien Veghel 24 uur ⚡</span>
+</div>
+</div>
+
+<!-- Main Header -->
+<div class="bg-white shadow-sm ">
+<div class="mx-auto px-4 txContainer mx-auto px-5 lg:px-0">
+    <div class="flex items-center justify-between h-24">
+
+    <!-- Logo -->
+    <div class="flex items-center">
+        <a href="index.html"rel="noopener noreferrer">
+            <img
+            src="images/Uw-elektricien-aan-huis-logo.jpg"
+            alt="Logo"
+            class="h-16 w-auto"
+            />
+        </a>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex items-center space-x-8">
+        <a href="index.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Home
+        </a>
+        <a href="Over-ons.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Over ons
+        </a>
+
+        <!-- Dropdown -->
+        <div class="relative group">
+        <button class="flex items-center gap-1 text-textColor txText font-medium hover:text-blueColor">
+            Diensten
+            <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+            />
+            </svg>
+        </button>
+
+        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <a href="Buitengesloten.html" class="block px-4 py-2 hover:bg-gray-100">
+                Buitengesloten [location-name]
+            </a>
+            <a href="sloten-vervangen.html" class="block px-4 py-2 hover:bg-gray-100">
+                Sloten vervangen
+            </a>
+            <a href="schadevrij-deuren-openen.html" class="block px-4 py-2 hover:bg-gray-100">
+            Schadevrij deuren openen
+            </a>
+            <a href="inbraakschade-herstel.html" class="block px-4 py-2 hover:bg-gray-100">
+            Inbraakschade herstel
+            </a>
+            <a href="kluis-opening.html" class="block px-4 py-2 hover:bg-gray-100">
+            Kluis opening
+            </a>
+            <a href="perilex-aansluiting.html" class="block px-4 py-2 hover:bg-gray-100">
+            Slot repareren
+            </a>
+            <a href="meerpuntssluiting.html" class="block px-4 py-2 hover:bg-gray-100">
+            Meerpuntssluiting 
+            </a>
+            <a href="veiligheidssloten.html" class="block px-4 py-2 hover:bg-gray-100">
+            Veiligheidssloten
+            </a>
+            <a href="Kerntrekbeveiliging.html" class="block px-4 py-2 hover:bg-gray-100">
+            Kerntrekbeveiliging
+            </a>
+            <a href="Inbraakbeveiliging.html" class="block px-4 py-2 hover:bg-gray-100">
+            Inbraakbeveiliging
+            </a>
+            <a href="inbraakschade-herstellen.html" class="block px-4 py-2 hover:bg-gray-100">
+            Inbraakschade herstellen
+            </a>
+        </div>
+        </div>
+
+        <a href="faqs.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Faq's
+        </a>
+        <a href="recensies.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Recensies
+        </a>
+        <a href="contact.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Contact
+        </a>
+    </nav>
+
+    <!-- Phone Button -->
+    <div class="hidden lg:block">
+        <a
+        href="tel:0852129861"
+        class="bg-greenColor hover:bg-blueColor txHeading leading-[1.2] text-white px-10 py-3 rounded text-sm font-regular flex items-center gap-2"
+        >
+        <i class="fa-solid fa-phone"></i> 085 212 9861
+        </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+        id="menuBtn"
+        class="lg:hidden text-textColor txText"
+    >
+        <svg
+        class="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+        />
+        </svg>
+    </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden pb-4">
+    <nav class="flex flex-col">
+
+        <a href="index.html" class="py-3 border-b txText">Home</a>
+        <a href="Over-ons.html" class="py-3 border-b txText">Over ons</a>
+
+        <!-- Mobile Dropdown -->
+        <div class="border-b txText">
+        <button
+            id="dienstenBtn"
+            class="w-full flex justify-between items-center py-3"
+        >
+            <span>Diensten</span>
+            <svg
+            id="dienstenIcon"
+            class="w-4 h-4 transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+            />
+            </svg>
+        </button>
+
+        <!-- Dropdown Items -->
+        <div id="dienstenMenu" class="hidden pl-4 pb-3">
+                     <a href="Buitengesloten.html" class="block px-4 py-2 hover:bg-gray-100">
+                Buitengesloten [location-name]
+            </a>
+            <a href="sloten-vervangen.html" class="block px-4 py-2 hover:bg-gray-100">
+                Sloten vervangen
+            </a>
+            <a href="schadevrij-deuren-openen.html" class="block px-4 py-2 hover:bg-gray-100">
+            Schadevrij deuren openen
+            </a>
+            <a href="inbraakschade-herstel.html" class="block px-4 py-2 hover:bg-gray-100">
+            Inbraakschade herstel
+            </a>
+            <a href="kluis-opening.html" class="block px-4 py-2 hover:bg-gray-100">
+            Kluis opening
+            </a>
+            <a href="perilex-aansluiting.html" class="block px-4 py-2 hover:bg-gray-100">
+            Slot repareren
+            </a>
+            <a href="meerpuntssluiting.html" class="block px-4 py-2 hover:bg-gray-100">
+            Meerpuntssluiting 
+            </a>
+            <a href="veiligheidssloten.html" class="block px-4 py-2 hover:bg-gray-100">
+            Veiligheidssloten
+            </a>
+            <a href="Kerntrekbeveiliging.html" class="block px-4 py-2 hover:bg-gray-100">
+            Kerntrekbeveiliging
+            </a>s
+            <a href="Inbraakbeveiliging.html" class="block px-4 py-2 hover:bg-gray-100">
+            Inbraakbeveiliging
+            </a>
+            <a href="inbraakschade-herstellen.html" class="block px-4 py-2 hover:bg-gray-100">
+            Inbraakschade herstellen
+            </a>
+        </div>
+        </div>
+
+        <a href="faqs.html" class="py-3 border-b txText">Faq's</a>
+        <a href="recensies.html" class="py-3 border-b txText">Recensies</a>
+        <a href="contact.html" class="py-3 border-b txText">Contact</a>
+
+        <a
+        href="tel:0852129861"
+        class="mt-4 bg-greenColor hover:bg-blueColor txHeading leading-[1.2] text-white px-6 py-3 rounded text-center "
+        >
+        <i class="fa-solid fa-phone"></i> 085 212 9861
+        </a>
+
+    </nav>
+    </div>
+</div>
+</div>
+</header>
+<!-- Header End -->
+    
+<div class="bg-blueColor flex items-center overflow-hidden">
+  <div class="txContainer mx-auto px-4 lg:px-0 ">
+    <div class="block lg:flex justify-between gap-12 items-end">
+
+      <!-- Left Content -->
+        <div class="w-full lg:w-[60%] py-12 lg:py-32 text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 txHeading">
+            Aardlekschakelaar vervangen in regio Veghel
+        </h1>
+
+        <p class="text-lg txHeading leading-relaxed mb-10">
+            De <strong>aardlekschakelaar</strong> speelt een cruciale rol in de <strong>veiligheid van uw groepenkast</strong>. Werkt deze niet meer goed of is hij defect? Geen zorgen – <strong>Elektricien Veghel 24 uur</strong> vervangt uw aardlekschakelaar <strong>snel, veilig en vakkundig</strong>!
+        </p>
+
+        <!-- Features -->
+        <div class="space-y-5 mb-10">
+            <div class="flex items-center gap-4">
+            <div class="iconMain h-6 w-6 flex items-center justify-center text-sm rounded-full bg-white ">
+                <span class="icon"><i class="fa-solid fa-check text-blueColor"></i></span>
+            </div>
+            <span class="text-lg">
+                Hoge kwaliteit aardlekschakelaars
+            </span>
+            </div>
+
+            <div class="flex items-center gap-4">
+            <div class="iconMain h-6 w-6 flex items-center justify-center text-sm rounded-full bg-white ">
+                <span class="icon"><i class="fa-solid fa-check text-blueColor"></i></span>
+            </div>
+            <span class="text-lg">
+                Beste bescherming
+            </span>
+            </div>
+
+            <div class="flex items-center gap-4">
+            <div class="iconMain h-6 w-6 flex items-center justify-center text-sm rounded-full bg-white ">
+                <span class="icon"><i class="fa-solid fa-check text-blueColor"></i></span>
+            </div>
+            <span class="text-lg">
+                Meer dan 45 jaar ervaring
+            </span>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <a
+            href="tel:0852129861"
+            class="mt-4 bg-greenColor hover:bg-darkColor text-white px-6 py-3 rounded text-center "
+            > <i class="fa-solid fa-phone"></i>
+            085 212 9861
+            </a>
+        </div>
+
+      <!-- Right Image -->
+        <div class="w-full lg:w-[40%] relative flex justify-center lg:justify-end">
+        <img
+            src="images/pahe.png"
+            alt="Electricians"
+            class="max-w-full lg:max-w-[650px] object-contain"
+        />
+        </div>
+    </div>
+  </div>
+</div>
+
+<section class="py-10 lg:py-20">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                    Waarom een <br>aardlekschakelaar?
+                </h2>
+
+                <div class="space-y-2 text-textColor txText text-[16px] leading-7">
+                    <p>Bij <strong>Elektricien Veghel 24 uur</strong> weten we als geen ander hoe belangrijk het is om uw woning of bedrijf <strong>elektrisch veilig</strong> te houden. Een goed werkende <strong>aardlekschakelaar</strong> is daarbij onmisbaar. Maar wat is precies het belang van een aardlekschakelaar? Wanneer moet u deze laten <strong>vervangen</strong>, en is het eigenlijk <strong>verplicht</strong>?</p>
+
+                    <p>Onze <strong>ervaren elektriciens</strong> staan dag en nacht klaar om uw installatie te controleren, te vernieuwen en te beveiligen volgens de <strong>hoogste veiligheidsnormen</strong>. Zo bent u altijd beschermd tegen stroomlekken en kortsluitingen. Wij voeren deze werkzaamheden uit voor zowel <strong>particulieren</strong> als <strong>bedrijven en utiliteitsprojecten</strong>. Veiligheid staat bij ons altijd op nummer één.</p>
+
+                    <p>Een <strong>goed werkende aardlekschakelaar</strong> is van groot belang voor uw <strong>veiligheid</strong>. Deze schakelt de stroom direct uit bij gevaar, bijvoorbeeld bij kortsluiting of stroomlek. Wanneer uw aardlekschakelaar echter <strong>te gevoelig</strong> is, kan deze onnodig vaak uitschakelen – vooral als u meerdere zware apparaten tegelijk gebruikt. Werkt de aardlekschakelaar niet goed meer of is deze defect? Dan is het verstandig om deze <strong>zo snel mogelijk te laten vervangen</strong>.</p>
+
+                    <p>De specialisten van <strong>Elektricien Veghel 24 uur</strong> kunnen uw aardlekschakelaar <strong>veilig en vakkundig aansluiten of vervangen</strong>. Wilt u liever zelf aan de slag? Wij geven u graag een <strong>duidelijk stappenplan en professioneel advies</strong>, zodat uw installatie altijd veilig blijft.</p>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-10">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                        <i class="fa-solid fa-phone"></i>
+                        085 212 9861
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src="images/ecd-man-electrical-technician-working-switchboard-with-fuses.jpg"
+                    alt="Electrician"
+                    class="max-w-full rounded-lg"
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="block lg:flex gap-12 ">
+            <div class="w-full lg:w-[35%]">
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                    Wanneer moet ik mijn aardlekschakelaar vervangen?
+                </h2>
+
+                <div class="">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                     <i class="fa-solid fa-phone"></i>
+                    Bel 085 212 9861
+                    </a>
+                </div>
+            </div>
+            
+            <div class="w-full mt-8 lg:mt-0 lg:w-[65%]">
+                <div class="space-y-2 text-textColor txText text-[16px] leading-7">
+                    <p>Net als alle andere elektrische onderdelen heeft ook een <strong>aardlekschakelaar</strong> een <strong>beperkte levensduur</strong>. Hoewel er geen vaste termijn is voor vervanging, zijn er wel duidelijke signalen die erop wijzen dat uw aardlekschakelaar aan vervanging toe is. Wanneer u merkt dat de schakelaar <strong>regelmatig uitvalt</strong>, <strong>niet meer goed reageert</strong> of <strong>verouderd</strong> is, kan het verstandig zijn om deze te laten vervangen door een <strong>moderne polige aardlekschakelaar</strong>. De experts van <strong>Elektricien Veghel 24 uur</strong> helpen u graag om uw elektrische installatie weer veilig en betrouwbaar te maken.</p>
+
+                    <p>Een belangrijk waarschuwingssignaal is wanneer uw <strong>aardlekschakelaar regelmatig uitschakelt zonder duidelijke oorzaak</strong>. Dit kan wijzen op een <strong>defect of slijtage</strong> in het apparaat. De levensduur van een aardlekschakelaar verschilt per <strong>merk en model</strong>, waardoor het verstandig is om de <strong>handleiding van de fabrikant</strong> te raadplegen voor specifieke informatie over onderhoud en vervanging. Twijfelt u over de werking van uw aardlekschakelaar? De experts van <strong>Elektricien Veghel 24 uur</strong> controleren en vervangen deze graag om uw elektrische installatie weer volledig veilig te maken.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-10 lg:py-20">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <img class="rounded" src="images/b668ee33-1be4-4963-8d03-91246caf6ca5.png" alt="">
+    </div>
+</section>
+
+<section class="pb-10 lg:pb-20">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="flex justify-center">
+                <img
+                    src="images/woman-turning-off-light-switch-scaled.jpg"
+                    alt="Electrician"
+                    class="max-w-full rounded-lg"
+                >
+            </div>
+
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                   Een aardlekschakelaar is verplicht
+                </h2>
+
+                <div class="space-y-2 text-textColor txText text-[16px] leading-7">
+                    <p>Een <strong>goed werkende aardlekschakelaar</strong> is niet alleen sterk aanbevolen, maar ook <strong>verplicht volgens de Nederlandse veiligheidsvoorschriften</strong>. Sinds <strong>2005</strong> moet iedere meterkast minimaal <strong>twee aardlekschakelaars</strong> bevatten. Dit geldt zowel voor <strong>nieuwe installaties</strong> als bij <strong>verbouwingen of uitbreidingen</strong> van bestaande elektra. Deze verplichting is ingesteld om de <strong>veiligheid van u en uw omgeving</strong> te garanderen. Het <strong>veilig aansluiten van een aardlekschakelaar</strong> is daarom van groot belang. De elektriciens van <strong>Elektricien Veghel 24 uur</strong> zorgen ervoor dat uw installatie volledig voldoet aan de huidige normen en veilig in gebruik is.</p>
+
+                    <p>Tegenwoordig moeten <strong>alle stopcontacten</strong> verplicht worden beveiligd met een <strong>extra aardlekschakelaar</strong>. Daarnaast is het verplicht om <strong>meerdere aardlekschakelaars</strong> te gebruiken, zodat niet uw hele installatie uitvalt bij een eventuele aardlek. Deze schakelaars zijn een vast onderdeel van de <strong>groepenkast</strong> en zijn sinds <strong>1975</strong> verplicht in zowel nieuwe als aangepaste huisinstallaties volgens de <strong>NEN 1010-norm</strong>.</p>
+
+                    <p>Heeft u nog geen aardlekschakelaar in uw meterkast? Dan is het belangrijk om er <strong>één te laten installeren</strong>. Laat het <strong>aansluiten van een aardlekschakelaar</strong> altijd uitvoeren door een <strong>erkende elektricien van Elektricien Veghel 24 uur</strong> – voor een veilige en betrouwbare installatie.</p>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-10">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                        <i class="fa-solid fa-phone"></i>
+                        085 212 9861
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="relative py-32 " style="background-image: url(images/2.jpg); background-repeat: no-repeat; background-size: cover;">
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <div class="txContainer mx-auto px-4 md:px-0 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="">
+                
+            </div>
+
+            <div class="bg-white shadow-xl p-8 rounded">
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                   Nieuwe aardlekschakelaar aansluiten door onze ervaren elektricien
+                </h2>
+
+                <div class="space-y-2 text-textColor txText text-[16px] leading-7 ">
+                    <p>Bij <strong>Elektricien Veghel 24 uur</strong> werken ervaren en gecertificeerde elektriciens die precies weten hoe ze veilig een <strong>extra aardlekschakelaar</strong> moeten aansluiten. Onze specialisten beginnen altijd met een <strong>grondige inspectie van uw elektrische installatie</strong> om te controleren of er andere problemen zijn en of een extra aardlekschakelaar daadwerkelijk nodig is.</p>
+
+                    <p>Hoe wij te werk gaan?<br>Voordat we starten, <strong>schakelen we de stroom volledig uit</strong> om veilig te kunnen werken. Vervolgens verwijderen we het deksel van de groepenkast en <strong>verbinden de kabels zorgvuldig</strong> met de verdeelblokjes en de aardlekschakelaar. De bedrading wordt netjes achter de <strong>DIN-rail</strong> bevestigd en alle verbindingen worden stevig vastgedraaid. Tot slot <strong>plaatsen we coderingstickers</strong> op de aardlekschakelaar en <strong>schakelen de stroom weer in</strong>. Zo bent u verzekerd van een <strong>professioneel en veilig aangesloten installatie</strong>.</p>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-10">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                        <i class="fa-solid fa-phone"></i>
+                        085 212 9861
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-10 lg:py-20">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                    Hoe weet ik of mijn aardlekschakelaar kapot is?
+                </h2>
+
+                <div class="space-y-2 text-textColor txText text-[16px] leading-7">
+                    <p>Het is belangrijk om te weten <strong>wanneer uw aardlekschakelaar defect is</strong>, zodat u tijdig kunt ingrijpen en de nodige reparaties kunt laten uitvoeren. Er zijn verschillende signalen die erop wijzen dat uw <strong>aardlekschakelaar aan vervanging toe is</strong>.</p>
+
+                    <p>Wanneer de aardlekschakelaar <strong>regelmatig uitschakelt zonder dat er sprake is van een lekstroom</strong>, kan dit duiden op een intern defect. Let ook op <strong>zichtbare schade</strong>, zoals scheurtjes, verkleuring of <strong>losse bedrading</strong> – dit zijn duidelijke tekenen van slijtage. Reageert de schakelaar <strong>niet op de testknop</strong>, dan functioneert deze mogelijk niet meer goed.</p>
+
+                    <p>Is uw aardlekschakelaar al <strong>jarenlang in gebruik</strong>? Dan kan deze simpelweg het einde van zijn levensduur hebben bereikt. In dat geval is het verstandig om te kiezen voor een <strong>nieuwe aardlekschakelaar van een betrouwbaar A-merk</strong>, professioneel geïnstalleerd door <strong>Elektricien Veghel 24 uur</strong>.</p>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-10">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                        <i class="fa-solid fa-phone"></i>
+                        085 212 9861
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src="images/earth-leakage-circuit-breaker.jpg"
+                    alt="Electrician"
+                    class="max-w-full rounded-lg"
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-10 lg:py-20 bg-[#f2f2f2]">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                    Veelgestelde vragen over het aansluiten of vervangen van een aardlekschakelaar.
+                </h2>
+
+                <p class="txText text-textColor text-[16px] leading-8 mb-10">
+                    Staat uw vraag er niet tussen? Geen probleem – onze medewerkers van
+                    <strong>Elektricien Veghel 24 uur</strong> staan
+                    <strong>dag en nacht</strong> voor u klaar om u verder te helpen.
+                </p>
+
+                <a href="tel:0852129861"
+                    class="inline-flex items-center gap-3 bg-greenColor hover:bg-darkColor transition-all duration-300 text-white px-8 py-4 rounded-lg txHeading text-lg">
+                    <i class="fa-solid fa-phone"></i>
+                    Bel 085 212 9861
+                </a>
+            </div>
+
+            <div class="space-y-5">
+
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
+                    <button
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        <span class="txHeading text-xl font-semibold text-darkColor">
+                            Mag ik zelf een aardlekschakelaar aansluiten?
+                        </span>
+                        <span class="txfaq-icon text-3xl font-bold">−</span>
+                    </button>
+
+                    <div class="txfaq-content px-8 pb-6">
+                        <p class="txText text-textColor text-[16px] leading-8">
+                            Hoewel het technisch mogelijk is, wordt dit sterk afgeraden. Een verkeerde aansluiting kan leiden tot gevaarlijke situaties. Laat dit daarom altijd uitvoeren door een erkende elektricien, zoals Elektricien Veghel 24 uur, die zorgt voor een veilige en professionele installatie.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
+                    <button
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        <span class="txHeading text-xl font-semibold text-darkColor">
+                            Hoe weet ik of mijn aardlekschakelaar nog goed werkt?
+                        </span>
+                        <span class="txfaq-icon text-3xl font-bold">+</span>
+                    </button>
+
+                    <div class="txfaq-content hidden px-8 pb-6">
+                        <p class="txText text-textColor text-[16px] leading-8">
+                            Hoewel het technisch mogelijk is, wordt dit sterk afgeraden. Een verkeerde aansluiting kan leiden tot gevaarlijke situaties. Laat dit daarom altijd uitvoeren door een erkende elektricien, zoals Elektricien Veghel 24 uur, die zorgt voor een veilige en professionele installatie.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
+                    <button
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        <span class="txHeading text-xl font-semibold text-darkColor">
+                            Hoe vaak moet ik mijn aardlekschakelaar testen?
+                        </span>
+                        <span class="txfaq-icon text-3xl font-bold">+</span>
+                    </button>
+
+                    <div class="txfaq-content hidden px-8 pb-6">
+                        <p class="txText text-textColor text-[16px] leading-8">
+                           Het wordt aanbevolen om de aardlekschakelaar minimaal twee keer per jaar te testen. Zo weet u zeker dat deze goed blijft functioneren en uw installatie veilig is.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
+                    <button
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        <span class="txHeading text-xl font-semibold text-darkColor">
+                            Wanneer moet ik mijn aardlekschakelaar vervangen?
+                        </span>
+                        <span class="txfaq-icon text-3xl font-bold">+</span>
+                    </button>
+
+                    <div class="txfaq-content hidden px-8 pb-6">
+                        <p class="txText text-textColor text-[16px] leading-8">
+                            Het wordt aanbevolen om de aardlekschakelaar minimaal twee keer per jaar te testen. Zo weet u zeker dat deze goed blijft functioneren en uw installatie veilig is.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-10 lg:py-20 bg-blueColor">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="block lg:flex gap-12 ">
+            <div class="w-full lg:w-[50%]">
+                <h2 class="text-2xl md:text-4xl font-bold text-white txHeading mb-8">
+                    Aardlekschakelaar aansluiten in regio Veghel?
+                </h2>
+                <p class="text-white text-[16px]">Neem contact op met onze elektricien.</p>
+            </div>
+            
+            <div class="w-full lg:w-[50%] mt-8 lg:mt-0">
+                <div class="md:flex justify-end">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                    Bel 085 212 9861 <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+                <div class="mt-10 md:flex justify-end">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                    Vraag een gratis offerte aan <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Start -->
+<div class="footer">
+<section class="bg-gray-100 py-6 mt-10">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 text-center">
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading leading-[1.2]">
+                    24/7 actief
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading leading-[1.2]">
+                    45+ jaar ervaring
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading leading-[1.2]">
+                    Direct geholpen
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading leading-[1.2]">
+                    Geen wachttijden
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<footer class="bg-blueColor text-white pt-20 pb-10">
+    <div class="txContainer mx-auto px-5 lg:px-0">
+
+        <!-- Footer Top -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- Column 1 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading leading-[1.2]">
+                    Diensten
+                </h3>
+
+                <ul class="space-y-4 text-lg">
+                    <li><a href="Buitengesloten.html"  class="hover:underline txText">Buitengesloten [location-name]</a></li>
+                    <li><a href="sloten-vervangen.html"  class="hover:underline txText">Sloten vervangen</a></li>
+                    <li><a href="schadevrij-deuren-openen.html"  class="hover:underline txText">Schadevrij deuren openen</a></li>
+                    <li><a href="inbraakschade-herstel.html"  class="hover:underline txText">Inbraakschade herstel</a></li>
+                    <li><a href="kluis-opening.html"  class="hover:underline txText">Kluis opening</a></li>
+                    <li><a href="perilex-aansluiting.html"  class="hover:underline txText">Slot repareren</a></li>
+                    <li><a href="meerpuntssluiting.html"  class="hover:underline txText">Meerpuntssluiting</a></li>
+                    <li><a href="veiligheidssloten.html"  class="hover:underline txText">Veiligheidssloten</a></li>
+                    <li><a href="Kerntrekbeveiliging.html"  class="hover:underline txText">Kerntrekbeveiliging</a></li>
+                    <li><a href="Inbraakbeveiliging.html"  class="hover:underline txText">Inbraakbeveiliging</a></li>
+                    <li><a href="inbraakschade-herstellen.html"  class="hover:underline txText">Inbraakschade herstellen</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading leading-[1.2]">
+                    Elektricien Veghel
+                </h3>
+
+                <ul class="space-y-4 text-lg">
+                    <li><a href="recensies.html" class="hover:underline txText">Reviews</a></li>
+                    <li><a href="faqs.html" class="hover:underline txText">Meest gestelde vragen (FAQ)</a></li>
+                    <li><a href="Over-ons.html" class="hover:underline txText">Over ons</a></li>
+                    <li><a href="privacy-policy.html" class="hover:underline txText">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html" class="hover:underline txText">Disclaimer</a></li>
+                    <li><a href="contact.html" class="hover:underline txText">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+                <p class="text-lg leading-[1.2] font-medium txText">
+                    Wij werken snel, betrouwbaar en transparant,
+                    zodat u precies weet waar u aan toe bent.
+                    Als lokale elektricien in Veghel zijn we trots
+                    op onze persoonlijke aanpak en directe service.
+                </p>
+            </div>
+
+            <!-- Column 4 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading leading-[1.2]">
+                    Contact
+                </h3>
+
+                <h4 class="font-bold text-xl mb-5 txHeading leading-[1.2]">
+                    Elektricien Veghel
+                </h4>
+
+                <ul class="space-y-3 text-lg">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <a href="tel:0852129861" class="txText">085 212 9861</a>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-globe"></i>
+                        <a href="#" class="txText">elektricien-veghel.nl</a>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@elektricien-veghel.nl" class="txText">
+                            info@elektricien-veghel.nl
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="mt-10">
+                    <h4 class="font-bold text-xl txHeading leading-[1.2]">
+                        Openingstijden:
+                    </h4>
+
+                    <p class="text-xl font-semibold mt-2 txText">
+                        24 uur actief in uw regio.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/50 my-16"></div>
+
+        <!-- Copyright -->
+        <div class="text-center">
+            <p class="text-lg font-medium leading-relaxed txText">
+                Copyright © 2012 – 2025 <a href="index.html">Elektricien Veghel 24</a> |
+                Regio's |
+                Alle rechten voorbehouden |
+               <a href="faqs.html">FAQ</a>  |
+               <a href="privacy-policy.html">Privacy policy</a>  |
+                Sitemap
+            </p>
+        </div>
+
+    </div>
+</footer>
+</div>
+<!-- Footer End -->
+
+
+</body>
+</html>

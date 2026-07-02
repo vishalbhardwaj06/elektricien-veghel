@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<script src="script.js"></script>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<!-- Header End -->
+<header>
+<!-- Top Bar -->
+<div class="bg-blueColor text-white text-sm ">
+<div class="mx-auto px-4 py-3 flex justify-end items-center txContainer mx-auto px-5 lg:px-0">
+    <span class="txText">Elektricien Veghel 24 uur ⚡</span>
+</div>
+</div>
+
+<!-- Main Header -->
+<div class="bg-white shadow-sm ">
+<div class="mx-auto px-4 txContainer mx-auto px-5 lg:px-0">
+    <div class="flex items-center justify-between h-24">
+
+    <!-- Logo -->
+    <div class="flex items-center">
+        <a href="index.html"rel="noopener noreferrer">
+            <img
+            src="images/Uw-elektricien-aan-huis-logo.jpg"
+            alt="Logo"
+            class="h-16 w-auto"
+            />
+        </a>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex items-center space-x-8">
+        <a href="index.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Home
+        </a>
+        <a href="Over-ons.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Over ons
+        </a>
+
+        <!-- Dropdown -->
+        <div class="relative group">
+        <button class="flex items-center gap-1 text-textColor txText font-medium hover:text-blueColor">
+            Diensten
+            <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+            />
+            </svg>
+        </button>
+
+        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <a href="aardlekschakelaar-vervangen.html" class="block px-4 py-2 hover:bg-gray-100">
+            Aardlekschakelaar vervangen
+            </a>
+            <a href="aardpen-slaan-kosten.html" class="block px-4 py-2 hover:bg-gray-100">
+            Aardpen slaan
+            </a>
+            <a href="elektra-renoveren.html" class="block px-4 py-2 hover:bg-gray-100">
+            Elektra renoveren
+            </a>
+            <a href="krachtstroom-aanleggen.html" class="block px-4 py-2 hover:bg-gray-100">
+            Krachtstroom aanleggen
+            </a>
+            <a href="inductiekookplaat-aansluiten.html" class="block px-4 py-2 hover:bg-gray-100">
+            Inductiekookplaat aansluiten
+            </a>
+            <a href="perilex-aansluiting.html" class="block px-4 py-2 hover:bg-gray-100">
+            Perilex aansluiting
+            </a>
+            <a href="tuinverlichting-aanleggen.html" class="block px-4 py-2 hover:bg-gray-100">
+            Tuinverlichting aanleggen
+            </a>
+            <a href="kortsluiting.html" class="block px-4 py-2 hover:bg-gray-100">
+            Kortsluiting
+            </a>
+            <a href="storingsdienst.html" class="block px-4 py-2 hover:bg-gray-100">
+            Storingsdienst
+            </a>
+        </div>
+        </div>
+
+        <a href="faqs.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Faq's
+        </a>
+        <a href="recensies.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Recensies
+        </a>
+        <a href="contact.html" class="text-textColor txText font-medium hover:text-blueColor">
+        Contact
+        </a>
+    </nav>
+
+    <!-- Phone Button -->
+    <div class="hidden lg:block">
+        <a
+        href="tel:0852129861"
+        class="bg-greenColor hover:bg-blueColor txHeading text-white px-10 py-3 rounded text-sm font-regular flex items-center gap-2"
+        >
+        <i class="fa-solid fa-phone"></i> 085 212 9861
+        </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+        id="menuBtn"
+        class="lg:hidden text-textColor txText"
+    >
+        <svg
+        class="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+        />
+        </svg>
+    </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden pb-4">
+    <nav class="flex flex-col">
+
+        <a href="index.html" class="py-3 border-b txText">Home</a>
+        <a href="Over-ons.html" class="py-3 border-b txText">Over ons</a>
+
+        <!-- Mobile Dropdown -->
+        <div class="border-b txText">
+        <button
+            id="dienstenBtn"
+            class="w-full flex justify-between items-center py-3"
+        >
+            <span>Diensten</span>
+            <svg
+            id="dienstenIcon"
+            class="w-4 h-4 transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+            />
+            </svg>
+        </button>
+
+        <!-- Dropdown Items -->
+        <div id="dienstenMenu" class="hidden pl-4 pb-3">
+             <li><a href="aardlekschakelaar-vervangen.html" class="hover:underline txText">Aardlekschakelaar vervangen</a></li>
+                    <li><a href="aardpen-slaan-kosten.html" class="hover:underline txText">Aardpen slaan</a></li>
+                    <li><a href="aardpen-slaan-kosten.html" class="hover:underline txText">Elektra renoveren</a></li>
+                    <li><a href="krachtstroom-aanleggen.html" class="hover:underline txText">Krachtstroom aanleggen</a></li>
+                    <li><a href="inductiekookplaat-aansluiten.html" class="hover:underline txText">Inductiekookplaat aansluiten</a></li>
+                    <li><a href="perilex-aansluiting.html" class="hover:underline txText">Perilex aansluiting</a></li>
+                    <li><a href="tuinverlichting-aanleggen.html" class="hover:underline txText">Tuinverlichting aanleggen</a></li>
+                    <li><a href="kortsluiting.html" class="hover:underline txText">Kortsluiting</a></li>
+                    <li><a href="storingsdienst.html" class="hover:underline txText">Storingsdienst</a></li>
+        </div>
+        </div>
+
+        <a href="faqs.html" class="py-3 border-b txText">Faq's</a>
+        <a href="recensies.html" class="py-3 border-b txText">Recensies</a>
+        <a href="contact.html" class="py-3 border-b txText">Contact</a>
+
+        <a
+        href="tel:0852129861"
+        class="mt-4 bg-greenColor hover:bg-blueColor txHeading text-white px-6 py-3 rounded text-center "
+        >
+        <i class="fa-solid fa-phone"></i> 085 212 9861
+        </a>
+
+    </nav>
+    </div>
+</div>
+</div>
+</header>
+
+<div class="bg-blueColor flex items-center overflow-hidden">
+  <div class="txContainer mx-auto px-4 lg:px-0 ">
+    <div class="block lg:flex justify-between gap-12 items-end">
+
+      <!-- Left Content -->
+        <div class="w-full lg:w-[60%] py-12 lg:py-32 text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 txHeading">
+            Kortsluiting in regio Veghel
+        </h1>
+
+        <p class="text-lg txHeading leading-relaxed mb-10">
+            Kortsluiting kan plotseling ontstaan en zorgt vaak voor stroomuitval, een brandlucht of zelfs gevaarlijke situaties. Het is belangrijk om snel en veilig te handelen en dat is precies waar <strong>Elektricien Veghel</strong> je bij helpt. Onze ervaren elektriciens sporen de oorzaak van de kortsluiting razendsnel op, herstellen de schade en zorgen dat je installatie weer veilig werkt. Of het nu gaat om een woning, kantoor of bedrijfspand: wij staan 24/7 paraat om storingen te verhelpen en herhaling te voorkomen.
+        </p>
+
+        <!-- Features -->
+        <div class="space-y-5 mb-10">
+            <div class="flex items-center gap-4">
+            <div class="iconMain h-6 w-6 flex items-center justify-center text-sm rounded-full bg-white ">
+                <span class="icon"><i class="fa-solid fa-check text-blueColor"></i></span>
+            </div>
+            <span class="text-lg">
+                Snel ter plaatse bij storingen
+            </span>
+            </div>
+
+            <div class="flex items-center gap-4">
+            <div class="iconMain h-6 w-6 flex items-center justify-center text-sm rounded-full bg-white ">
+                <span class="icon"><i class="fa-solid fa-check text-blueColor"></i></span>
+            </div>
+            <span class="text-lg">
+                Ervaren en gecertificeerde elektriciens
+            </span>
+            </div>
+
+            <div class="flex items-center gap-4">
+            <div class="iconMain h-6 w-6 flex items-center justify-center text-sm rounded-full bg-white ">
+                <span class="icon"><i class="fa-solid fa-check text-blueColor"></i></span>
+            </div>
+            <span class="text-lg">
+                24/7 beschikbaarheid in Veghel en omgeving
+            </span>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <a
+            href="tel:0852129861"
+            class="mt-4 bg-greenColor hover:bg-darkColor text-white px-6 py-3 rounded text-center "
+            > <i class="fa-solid fa-phone"></i>
+            085 212 9861
+            </a>
+        </div>
+
+      <!-- Right Image -->
+        <div class="w-full lg:w-[40%] relative flex justify-center lg:justify-end">
+        <img
+            src="images/pahe.png"
+            alt="Electricians"
+            class="max-w-full lg:max-w-[650px] object-contain"
+        />
+        </div>
+    </div>
+  </div>
+</div>
+
+<section class="py-10 lg:py-20">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                    Kortsluiting in huis? Elektricien Veghel helpt je veilig en snel verder
+                </h2>
+
+                <div class="space-y-2 text-textColor txText text-[16px] leading-7">
+                    <p>Kortsluiting is een probleem dat iedereen kan overkomen — of je nu in een nieuwbouwwoning, een oud pand of een bedrijfspand werkt. Het kan leiden tot stroomuitval, gevaarlijke situaties en zelfs brandgevaar. Gelukkig kun je bij Elektricien Veghel terecht voor snelle, professionele en veilige hulp bij kortsluiting. Onze ervaren elektriciens staan 24/7 klaar om jouw elektrische installatie weer veilig en betrouwbaar te maken.</p>
+
+                    <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                        Wat is kortsluiting precies?
+                    </h2>
+
+                    <p>Kortsluiting ontstaat wanneer twee elektrische geleiders met elkaar in aanraking komen op een plek waar dat niet hoort. Hierdoor ontstaat er een directe verbinding met een lage weerstand, waardoor er in korte tijd een enorme stroomsterkte door de kabel vloeit. Dit zorgt vaak voor een vonk, een knal of het doorslaan van een stop of zekering.</p>
+
+                    <p>In de meeste gevallen treedt de <strong>zekering of aardlekschakelaar</strong> in werking om erger te voorkomen. Toch kan de schade aan bedrading, apparaten of stopcontacten aanzienlijk zijn. Daarom is het belangrijk om altijd de oorzaak te laten onderzoeken door een <strong>erkende elektricien</strong>.</p>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-10">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                        <i class="fa-solid fa-phone"></i>
+                        085 212 9861
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src="images/ecd-man-electrical-technician-working-switchboard-with-fuses (1).jpg"
+                    alt="Electrician"
+                    class="max-w-full rounded-lg"
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="block lg:flex gap-12 ">
+            <div class="w-full lg:w-[35%]">
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                    De meest voorkomende oorzaken van kortsluiting
+                </h2>
+
+                <div class="">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                     <i class="fa-solid fa-phone"></i>
+                    Bel 085 212 9861
+                    </a>
+                </div>
+            </div>
+            
+            <div class="w-full mt-8 lg:mt-0 lg:w-[65%]">
+                <div class="space-y-2 text-textColor txText text-[16px] leading-7">
+                    <p>Kortsluiting kan door verschillende problemen ontstaan. Onze specialisten bij Elektricien Veghel zien in de praktijk vaak de volgende oorzaken:</p>
+                    
+                    <p>1 <strong>Beschadigde kabels of snoeren</strong> – bijvoorbeeld door slijtage, knaagdieren of verkeerd gebruik.</p>
+
+                    <p>2 <strong>Verouderde elektrische installatie</strong> – oude bedrading of stoppenkasten die niet meer voldoen aan de huidige normen.</p>
+
+                    <p>3 <strong>Vocht in elektrische componenten</strong> – in vochtige ruimtes zoals kelders, badkamers of buitenaansluitingen.</p>
+
+                    <p>4 <strong>Defecte elektrische apparaten</strong> – bijvoorbeeld een kapotte wasmachine, magnetron of verlichting.</p>
+
+                    <p>5 <strong>Overbelasting van de groep</strong> – te veel apparaten op één stroomgroep kan leiden tot oververhitting en kortsluiting.</p>
+
+                    <p>Onze elektriciens kunnen deze oorzaken snel opsporen met professionele meetapparatuur en zorgen voor een blijvende oplossing.</p>
+
+                    <p>Een deskundige elektricien weet precies hoe je de situatie veilig moet benaderen. Elektricien Veghel werkt altijd volgens de <strong>NEN 1010-veiligheidsnormen</strong> en beschikt over de juiste meetapparatuur om kortsluiting op een veilige manier te lokaliseren en te verhelpen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-10 lg:py-20">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <img class="rounded" src="images/b668ee33-1be4-4963-8d03-91246caf6ca5.png" alt="">
+    </div>
+</section>
+
+<section class="py-10 lg:py-20">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="flex justify-center">
+                <img
+                    src="images/earth-leakage-circuit-breaker.jpg"
+                    alt="Electrician"
+                    class="max-w-full rounded-lg"
+                >
+            </div>
+
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                    Wat is kortsluiting precies?
+                </h2>
+
+                <div class="space-y-2 text-textColor txText text-[16px] leading-7">
+                    
+                    <p>Kortsluiting ontstaat wanneer twee elektrische geleiders met elkaar in aanraking komen op een plek waar dat niet hoort. Hierdoor ontstaat er een directe verbinding met een lage weerstand, waardoor er in korte tijd een enorme stroomsterkte door de kabel vloeit. Dit zorgt vaak voor een vonk, een knal of het doorslaan van een stop of zekering.</p>
+
+                     <p>1 <strong>Snelle storingsdienst</strong> We zijn 24 uur per dag, 7 dagen per week bereikbaar voor spoedgevallen. Binnen korte tijd staat er een gecertificeerde elektricien bij jou op de stoep om het probleem te verhelpen.</p>
+
+                    <p>2 <strong>Veilige en duurzame oplossingen</strong> Wij doen meer dan alleen de kortsluiting oplossen. We sporen de oorzaak op en bieden een blijvende oplossing, zodat je zeker weet dat het probleem niet terugkeert.</p>
+
+                    <p>3 <strong>Ervaren vakmensen</strong> Onze elektriciens hebben ruime ervaring met storingen in woningen, bedrijven en industriële installaties. Met professionele meetapparatuur kunnen we storingen tot op de millimeter nauwkeurig lokaliseren.</p>
+
+                    <p>4 <strong>Transparante tarieven</strong>Bij Elektricien Veghel kom je nooit voor verrassingen te staan. We werken met duidelijke prijzen en geven vooraf een kostenindicatie.</p>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-10">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                        <i class="fa-solid fa-phone"></i>
+                        085 212 9861
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="relative py-32 " style="background-image: url(images/2.jpg); background-repeat: no-repeat; background-size: cover;">
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <div class="txContainer mx-auto px-4 md:px-0 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="">
+                
+            </div>
+
+            <div class="bg-white shadow-xl p-8 rounded">
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                   Preventie: hoe voorkom je kortsluiting?
+                </h2>
+
+                <div class="space-y-2 text-textColor txText text-[16px] leading-7 ">
+                    <p>Voorkomen is beter dan genezen. Met enkele eenvoudige maatregelen kun je de kans op kortsluiting aanzienlijk verkleinen:</p>
+                    
+                    <ul class="list-disc pl-5 marker:text-black">
+                        <li>Laat <strong>verouderde installaties</strong> controleren of vervangen.</li>
+                        <li>Gebruik <strong>goedgekeurde stekkerdozen en verlengkabels</strong>.</li>
+                        <li>Plaats elektrische apparaten niet te dicht bij water of vochtige plekken.</li>
+                        <li>Laat de <strong>groepenkast regelmatig inspecteren</strong> door een erkende elektricien.</li>
+                        <li>Gebruik nooit beschadigde snoeren of stekkers.</li>
+                    </ul>
+                    
+                    <p>Elektricien Veghel biedt ook <strong>preventieve inspecties</strong> aan. Wij controleren de volledige elektrische installatie, zodat mogelijke risico’s vroegtijdig worden opgespoord</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-10 lg:py-20">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                    Onze werkwijze bij een storing
+                </h2>
+
+                <div class="space-y-2 text-textColor txText text-[16px] leading-7">
+                    
+                    <p>Wanneer je ons belt voor hulp bij kortsluiting, verloopt het proces als volgt:</p>
+
+                     <p>1 <strong>Telefonisch contact en eerste analyse</strong> We luisteren naar je probleem en geven direct advies om de situatie veilig te houden.</p>
+
+                    <p>2 <strong>Snelle aankomst ter plaatse</strong> Een monteur van Elektricien Veghel komt zo snel mogelijk naar je toe, vaak binnen één uur in Veghel en omgeving.</p>
+
+                    <p>3 <strong>Veiligheidscheck en metingen</strong> Met geavanceerde apparatuur meten we waar de kortsluiting zich bevindt.</p>
+
+                    <p>4 <strong>Reparatie en herstel</strong>We vervangen defecte kabels, schakelaars of apparaten en controleren of het hele systeem weer goed functioneert.</p>
+
+                    <p>5 <strong>Nazorg en advies</strong>Na afloop geven we advies om herhaling te voorkomen, bijvoorbeeld door aanpassing van groepen of vernieuwing van onderdelen.</p>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-10">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                        <i class="fa-solid fa-phone"></i>
+                        085 212 9861
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                    src="images/earth-leakage-circuit-breaker.jpg"
+                    alt="Electrician"
+                    class="max-w-full rounded-lg"
+                >
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-10 lg:py-20 bg-[#f2f2f2]">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+            <div>
+                <h2 class="text-2xl md:text-4xl font-bold text-darkColor txHeading mb-8">
+                    Veelgestelde vragen over kortsluiting in regio Veghel
+                </h2>
+
+                <p class="txText text-textColor text-[16px] leading-8 mb-10">
+                    Staat uw vraag er niet tussen? Geen probleem – onze medewerkers van <strong>Elektricien Veghel</strong>&nbsp;staan <strong>dag en nacht</strong> voor u klaar om u verder te helpen.
+                </p>
+
+                <a href="tel:0852129861"
+                    class="inline-flex items-center gap-3 bg-greenColor hover:bg-darkColor transition-all duration-300 text-white px-8 py-4 rounded-lg txHeading text-lg">
+                    <i class="fa-solid fa-phone"></i>
+                    Bel 085 212 9861
+                </a>
+            </div>
+
+            <div class="space-y-5">
+
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
+                    <button
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        <span class="txHeading text-xl font-semibold text-darkColor">
+                             Wat moet ik doen bij kortsluiting in mijn woning in Veghel? 
+                        </span>
+                        <span class="txfaq-icon text-3xl font-bold">−</span>
+                    </button>
+
+                    <div class="txfaq-content px-8 pb-6">
+                        <p class="txText text-textColor text-[16px] leading-8">
+                            Zet direct de hoofdschakelaar uit om verdere schade of gevaar te voorkomen. Controleer daarna of een zekering of groep is uitgevallen. Trek vervolgens alle stekkers uit de stopcontacten en schakel de groep weer in. Slaat de stroom direct weer uit? Dan zit het probleem in de installatie en is het verstandig om Elektricien Veghel te bellen. Onze monteurs staan 24/7 klaar om veilig en snel de oorzaak te achterhalen en te verhelpen.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
+                    <button
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        <span class="txHeading text-xl font-semibold text-darkColor">
+                            Wat kost het om kortsluiting te laten verhelpen door Elektricien Veghel?
+                        </span>
+                        <span class="txfaq-icon text-3xl font-bold">+</span>
+                    </button>
+
+                    <div class="txfaq-content hidden px-8 pb-6">
+                        <p class="txText text-textColor text-[16px] leading-8">
+                            De kosten hangen af van de aard van de storing en de tijd die nodig is om de oorzaak te vinden en te repareren. Een eenvoudige kortsluiting is vaak binnen een uur opgelost, terwijl grotere storingen wat meer tijd vragen. Bij Elektricien Veghel werken we altijd met duidelijke tarieven en geen verborgen kosten. Je ontvangt vooraf een kostenindicatie, zodat je precies weet waar je aan toe bent.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
+                    <button
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        <span class="txHeading text-xl font-semibold text-darkColor">
+                            Kan kortsluiting gevaarlijk zijn?
+                        </span>
+                        <span class="txfaq-icon text-3xl font-bold">+</span>
+                    </button>
+
+                    <div class="txfaq-content hidden px-8 pb-6">
+                        <p class="txText text-textColor text-[16px] leading-8">
+                           Ja, kortsluiting kan zeer gevaarlijk zijn. Door de plotselinge hoge stroomsterkte kan er hitte ontstaan, wat brandgevaar oplevert. Ook kunnen metalen onderdelen onder spanning komen te staan, met kans op elektrische schokken. Daarom is het belangrijk om kortsluiting altijd te laten onderzoeken door een erkende elektricien. Elektricien Veghel zorgt dat je installatie weer volledig veilig functioneert.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="txfaq-item bg-white rounded-xl overflow-hidden">
+                    <button
+                        class="txfaq-btn w-full flex items-center justify-between text-left px-8 py-6">
+                        <span class="txHeading text-xl font-semibold text-darkColor">
+                            Hoe kan ik kortsluiting in de toekomst voorkomen?
+                        </span>
+                        <span class="txfaq-icon text-3xl font-bold">+</span>
+                    </button>
+
+                    <div class="txfaq-content hidden px-8 pb-6">
+                        <p class="txText text-textColor text-[16px] leading-8">
+                            Je kunt kortsluiting voorkomen door regelmatig onderhoud aan je elektrische installatie te laten uitvoeren. Gebruik geen beschadigde snoeren of stekkers, vermijd overbelasting van groepen en laat oude bedrading tijdig vervangen. Elektricien Veghel biedt preventieve inspecties aan om problemen vroegtijdig op te sporen. Zo voorkom je storingen en vergroot je de veiligheid van je woning of bedrijfspand.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-10 lg:py-20 bg-blueColor">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="block lg:flex gap-12 ">
+            <div class="w-full lg:w-[50%]">
+                <h2 class="text-2xl md:text-4xl font-bold text-white txHeading mb-8">
+                    Aardlekschakelaar aansluiten in regio Veghel?
+                </h2>
+                <p class="text-white text-[16px]">Neem contact op met onze elektricien.</p>
+            </div>
+            
+            <div class="w-full lg:w-[50%] mt-8 lg:mt-0">
+                <div class="md:flex justify-end">
+                    <a href="tel:0852129861"class="inline-flex items-center gap-3 bg-greenColor txHeading hover:bg-darkColor px-6 py-3 rounded-lg text-white font-semisemibold text-lg transition">
+                    Bel 085 212 9861 <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Start -->
+<div class="footer">
+<section class="bg-gray-100 py-6 mt-10">
+    <div class="txContainer mx-auto px-4 md:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-6 text-center">
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading leading-[1.2]">
+                    24/7 actief
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading leading-[1.2]">
+                    45+ jaar ervaring
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading leading-[1.2]">
+                    Direct geholpen
+                </span>
+            </div>
+
+            <!-- Item -->
+            <div class="flex items-center justify-center gap-3">
+                <i class="fa-solid fa-circle-check text-blueColor text-xl"></i>
+                <span class="text-xl font-medium text-gray-800 txHeading leading-[1.2]">
+                    Geen wachttijden
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<footer class="bg-blueColor text-white pt-20 pb-10">
+    <div class="txContainer mx-auto px-5 lg:px-0">
+
+        <!-- Footer Top -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- Column 1 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading leading-[1.2]">
+                    Diensten
+                </h3>
+
+                <ul class="space-y-4 text-lg">
+                    <li><a href="Buitengesloten.html"  class="hover:underline txText">Buitengesloten [location-name]</a></li>
+                    <li><a href="sloten-vervangen.html"  class="hover:underline txText">Sloten vervangen</a></li>
+                    <li><a href="schadevrij-deuren-openen.html"  class="hover:underline txText">Schadevrij deuren openen</a></li>
+                    <li><a href="inbraakschade-herstel.html"  class="hover:underline txText">Inbraakschade herstel</a></li>
+                    <li><a href="kluis-opening.html"  class="hover:underline txText">Kluis opening</a></li>
+                    <li><a href="perilex-aansluiting.html"  class="hover:underline txText">Slot repareren</a></li>
+                    <li><a href="meerpuntssluiting.html"  class="hover:underline txText">Meerpuntssluiting</a></li>
+                    <li><a href="veiligheidssloten.html"  class="hover:underline txText">Veiligheidssloten</a></li>
+                    <li><a href="Kerntrekbeveiliging.html"  class="hover:underline txText">Kerntrekbeveiliging</a></li>
+                    <li><a href="Inbraakbeveiliging.html"  class="hover:underline txText">Inbraakbeveiliging</a></li>
+                    <li><a href="inbraakschade-herstellen.html"  class="hover:underline txText">Inbraakschade herstellen</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading leading-[1.2]">
+                    Elektricien Veghel
+                </h3>
+
+                <ul class="space-y-4 text-lg">
+                    <li><a href="recensies.html" class="hover:underline txText">Reviews</a></li>
+                    <li><a href="faqs.html" class="hover:underline txText">Meest gestelde vragen (FAQ)</a></li>
+                    <li><a href="Over-ons.html" class="hover:underline txText">Over ons</a></li>
+                    <li><a href="privacy-policy.html" class="hover:underline txText">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html" class="hover:underline txText">Disclaimer</a></li>
+                    <li><a href="contact.html" class="hover:underline txText">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+                <p class="text-lg leading-[1.2] font-medium txText">
+                    Wij werken snel, betrouwbaar en transparant,
+                    zodat u precies weet waar u aan toe bent.
+                    Als lokale elektricien in Veghel zijn we trots
+                    op onze persoonlijke aanpak en directe service.
+                </p>
+            </div>
+
+            <!-- Column 4 -->
+            <div>
+                <h3 class="text-xl font-semibold mb-6 txHeading leading-[1.2]">
+                    Contact
+                </h3>
+
+                <h4 class="font-bold text-xl mb-5 txHeading leading-[1.2]">
+                    Elektricien Veghel
+                </h4>
+
+                <ul class="space-y-3 text-lg">
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <a href="tel:0852129861" class="txText">085 212 9861</a>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-globe"></i>
+                        <a href="#" class="txText">elektricien-veghel.nl</a>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@elektricien-veghel.nl" class="txText">
+                            info@elektricien-veghel.nl
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="mt-10">
+                    <h4 class="font-bold text-xl txHeading leading-[1.2]">
+                        Openingstijden:
+                    </h4>
+
+                    <p class="text-xl font-semibold mt-2 txText">
+                        24 uur actief in uw regio.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/50 my-16"></div>
+
+        <!-- Copyright -->
+        <div class="text-center">
+            <p class="text-lg font-medium leading-relaxed txText">
+                Copyright © 2012 – 2025 <a href="index.html">Elektricien Veghel 24</a> |
+                Regio's |
+                Alle rechten voorbehouden |
+               <a href="faqs.html">FAQ</a>  |
+               <a href="privacy-policy.html">Privacy policy</a>  |
+                Sitemap
+            </p>
+        </div>
+
+    </div>
+</footer>
+</div>
+<!-- Footer End -->
+</body>
+</html>
